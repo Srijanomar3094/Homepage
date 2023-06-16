@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: rgb(245, 245, 201);
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        div.d2 {
+          background-color: rgb(236, 229, 160);
+          width: 1200px;
+          padding:15px;
+          margin: 20px;
+          border-radius:20px;
+          text-align:center;
+        }
+        p.p1{
+            font-size:50px;
+            text-align:center;
+            color:rgb(1, 22, 3);
+
+
+        }
+        .p2{
+            font-size:11px;
+        }
+        .d1{
+            border-radius:20px;
+            color:rgb(2, 29, 5);
+
+        }
+        .d3{
+            background-color:rgb(238, 238, 187);
+            padding:20px;
+            border-radius:20px;
+            margin:30px;
+            
+            
+        }
+        .test:after {
+        content: '\2807';
+        font-size: 100px;
+     }
+     img{
+        height:40%;
+        width:40%;
+     }
+     button{
+        width:100px;
+        
+        border-radius:10px;
+     }
+     hr{
+        width:30%;
+     }
+     fa2{
+  padding: 20px;
+  font-size: 30px;
+  
+  text-align: center;
+  text-decoration: none;
+  
+}
+.flex-container {
+  display: flex;
+  width:fit-content; 
+}
+
+.flex-container > div {
+    background-color:rgb(238, 238, 187);
+  margin: 10px;
+  padding: 2px;
+  text-align:left;
+  font-size: 14px;
+  
+
+}
+h4{
+    width:70%;
+    text-align:center;
+    border-bottom:1px; 
+    line-height:1px;
+    margin: 10px 0px 20px;
+}
+h4 span{
+    background-color:rgb(236, 229, 160);
+}
+.container {
+  position: relative; 
+  margin:auto;
+  background-color: rgb(236, 229, 160);
+ 
+}
+
+
+.cornerbutton {
+  position: absolute; 
+  top: 60px; 
+  right: 60px; 
+   background-color: rgb(236, 229, 160);
+  
+}
+.para{
+    position: relative; 
+
+}
+.pp{
+    position: absolute; 
+  
+  left: 65px; 
+
+}
+.i{
+    padding:20px;
+}
+h2 {
+  display: flex;
+  flex-direction: row;
+}
+h2:before, h1:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+h2:before {
+  margin-right: 5px
+}
+h2:after {
+  margin-left: 5px
+}
+.flex--vertical{
+  flex-direction: row;
+  flex-wrap: wrap;}
+.logo{
+    border-radius:100%;
+    width:10px;
+    height:10px;
+
+}
+.center {
+  margin: auto;
+  width: 50%;
+  
+  padding: 10px;
+}
+.align{
+    display: flex;
+    flex-direction: column;
+}
+.mid {
+  display: flex;
+  background-color:  rgb(236, 229, 160);
+  margin:40px;
+  
+}
+
+.mid2 {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  
+}
+div{
+    padding:10px;
+}
+/*h4 {
+            display: flex;
+            flex-direction: row;
+            font-size:20px;
+            
+        }*/
+          
+        h4 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1px;
+   margin: 10px 0 20px; 
+} 
+
+h4 span { 
+    background:rgb(236, 229, 160); 
+    padding:0 20px; 
+    align-items: center;
+} 
+h5 {
+   width:50%;
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1px;
+
+  
+   align-items: center;
+} 
+
+h5 span { 
+    background-color:rgb(238, 238, 187); 
+    padding:20 20px; 
+}
+/*
+h5:before,h5:after{
+    content:
+}
+*/
+        img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            
+        }
+        .fl {
+        margin: 2px;
+        min-height: 0px;	
+        display: flex;
+      
+        justify-content: center;
+        align-items: center; 
+    }
+    .it {
+        width: 50px;
+        padding: 8px;
+        background-color:rgb(238, 238, 187);
+    }
+    .fa-eye{
+  position: absolute;
+  top: 28%;
+  right: 4%;
+  cursor: pointer;
+  color: lightgray;
+}
+
+
+    
+        </style>
+</head>
+<body>
+    <div class="d2">
+        <div class="container">
+        <button class="cornerbutton"style="width:40px;padding:7px;height:80px;background-color:rgb(238, 238, 187);position:right;"><i class="fa fa-microphone-slash" style="color:red;font-size:15px"></i><hr>
+            <i class="fa fa-volume-up" style="font-size:15px"></i></button></div>
+           <p class="p1">Welcome back</p>
+        <p style="text-align:center; color:rgb(2, 2, 37);">Join the world's largest community</p>
+
+    <div><div class="para"><p class="pp">Recent logins</p></div>
+    
+    
+    
+    <!--<button><i class="fa fa-times-circle" style="font-size:25px;color:red;"></i><img src="pngwing.com.png"><i class="fa fa-ellipsis-v"></i><br>
+    <p class="p2">Zain Sajid</p></button>
+    <button><i class="fa fa-times-circle" style="font-size:25px;color:red;"></i><img src="pngwing.com.png" ><i class="fa fa-ellipsis-v"></i><br>
+        <p class="p2">Moty Weiss</p></button>
+        <button style="background-color:red; color:white;"><i class="fa fa-plus" style="font-size:40px;padding:16px;"></i><br>Add Account</p></button>
+        <b style="font-size:14px">Sign up/Help<b>
+            <div class="align">
+                   <button class="flex--vertical" style="background-color:orange;width:50px;height:50px;border-radius:10px;"><i class="fa fa-step-forward" style="font-size:30px;color:rgb(255, 255, 255);"></i></button>   
+                   <pre> <u>This video will help you to 
+create a new account</u> </pre>
+</div>-->
+
+<div class="mid">
+    <div><button style=" background-color:rgb(238, 238, 187);height:150px;">
+        <div>
+        
+            <i class="fa fa-times-circle" style="font-size:15px;color:red;align-content:flex-start;"></i>
+            <u style="color:rgb(238, 238, 187);">ccccc</u>
+            <i class="fa fa-ellipsis-v" style="align-content: flex-end;"></i>
+            
+        </div>
+        <div>
+            <img src="pngwing.com.png">
+        </div>
+        <div>
+            <p class="p2">Zain Sajid</p>
+        </div>
+        
+        </button></div>
+    <div><button style=" background-color:rgb(238, 238, 187);height:150px;">
+        <div>
+        
+            <i class="fa fa-times-circle" style="font-size:15px;color:red;align-content:flex-start;"></i>
+            <u style="color:rgb(238, 238, 187);">ccccc</u>
+            <i class="fa fa-ellipsis-v" style="align-content: flex-end;"></i>
+            
+        </div>
+        <div>
+            <img src="pngwing.com.png">
+        </div>
+        <div>
+            <p class="p2">Moty Weiss</p>
+        </div>
+        
+        </button></div>
+    <div> <button style="background-color:red;height:150px; color:white;"><i class="fa fa-plus" style="font-size:40px;padding:16px;height:44px;"></i><br>Add Account</p></button></div>  
+    <div style="color:rgb(8, 26, 4);font-size:14px;"><b><pre>  Sign up
+    Help
+    </pre></b></div>
+    <div style="text-align:left"> <button class="flex--vertical" style="background-color:orange;width:50px;height:50px;border-radius:10px;"><i class="fa fa-step-forward" style="font-size:30px;color:rgb(255, 255, 255);"></i></button><pre> <u style="color:rgb(8, 26, 4);font-size:14px;">This video will help you to</u> 
+        <u>create a new account</u> </pre></div>  
+
+
+</div>
+  
+        
+       
+    
+        <h4><span>or</span></h4>
+      
+        
+           <div class="d3"> 
+            <div class="col center">
+            <div class="flex-container">
+                <div><form action="/action_page.php">
+                    <input style="  background-color:rgb(238, 238, 187);border: 1px solid rgb(153, 147, 147);border-radius:9px;height:35px;width:210px;" type="text" id="pn" name="pn" placeholder="Phone number,username or email"><br><br>
+                    <label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      Remember for 30 days</div>
+                <div><input style="  background-color:rgb(238, 238, 187);border: 1px solid rgb(153, 147, 147);border-radius:9px;height:35px;width:350x;";type="text" id="passwd" name="password" placeholder="Password"><i class="fa-solid fa-eye" id="eye"></i>
+                    <br><br><u>Forgot password</u></div>
+                </div>
+              </div>
+            
+            
+            <br>
+            <button style="background-color:rgb(11, 37, 11); border-radius:9px;padding:11px;color:white;width:300px">Sign in</button>
+            <br><div style="align-items: center;">
+            <button style="background-color:rgb(248, 31, 31);border-radius:9px;padding:11px;color:white;width:300px">Create New Account</button>
+            
+            
+            <br><br><span>- Or  continue  with -</span></h5></div>
+           <!-- <i class="fa fa-google"></i>
+            <i href="#" class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>-->
+
+    <!--<div class="logo">
+        <div><img src="google.png"></div><div><img src="facebook.png"></div><div><img src="twitter.png"></div></div>
+    <br>-->
+    <div class="fl">
+        <div class="it" ><img style="width:30px;height:30px;border-radius:5px;" src="googl.png"></div>
+        <div class="it"><img style="width:30px;height:30px;border-radius:5px;"src="faceb.png"></div>
+        <div class="it"><img style="width:30px;height:30px;border-radius:5px;"src="twit.png"></div>
+       </div> 
+
+    <p style="font-size:10px;">By clicking button above,you agree to our <b style="font-size:10px;color:rgb(23, 219, 245);">terms of use</b> and<b style="font-size:10px;color:rgb(23, 219, 245);"> privacy policies.</b></p>
+    </div>
+    
+    
+
+       
+    </div>
+</body>
+</html>
